@@ -1,0 +1,23 @@
+﻿<Window x:Class="browserTest.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:browserTest"
+        mc:Ignorable="d"
+        Closing="Window_Closing"
+        Title="BrowserTest" Width="400" Height="300"
+        MinWidth="400" MinHeight="300">
+    <Grid>
+        <DockPanel>
+            <Grid DockPanel.Dock="Top">
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="4">
+                    <Label Content="Url: " VerticalAlignment="Center"/>
+                    <TextBox Name="tbUrl" Text="https://www.google.com" Width="200" TextWrapping="Wrap" VerticalAlignment="Center"/>
+                    <Button Name="btNavigate" Click="btNavigate_Click" Content="Go!" VerticalAlignment="Center"/>
+                </StackPanel>
+            </Grid>
+            <TextBox Name="tbPageRaw" Text="" Margin="4"/>
+        </DockPanel>
+    </Grid>
+</Window>
